@@ -29,7 +29,6 @@
         .container {
             background-color: var(--card-bg);
             width: 100%;
-            /* Na komputerze zachowujemy Twoje 25% */
             max-width: 25%; 
             border-radius: 15px;
             padding: 20px;
@@ -37,7 +36,6 @@
             flex-direction: column;
             align-items: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-            /* Poprawiony zapis przezroczystości */
             opacity: 0.9;
         }
 
@@ -121,12 +119,9 @@
             display: block;
         }
 
-        /* --- WSPARCIE DLA URZĄDZEŃ MOBILNYCH (Media Queries) --- */
-        
-        /* Tablety i mniejsze ekrany komputerów */
         @media (max-width: 1200px) {
             .container {
-                max-width: 450px; /* Przestajemy polegać na 25%, bo byłoby za wąsko */
+                max-width: 450px;
             }
         }
 
@@ -136,17 +131,17 @@
                 padding: 20px 15px;
             }
             .container {
-                max-width: 100%; /* Na telefonie zajmuje całą dostępną szerokość */
+                max-width: 100%;
                 padding: 25px 15px;
             }
             h1 {
-                font-size: 36px; /* Zmniejszamy nick, żeby nie wyszedł poza ramkę */
+                font-size: 36px;
             }
             .social-links {
                 gap: 15px;
             }
             .social-links a {
-                font-size: 32px; /* Zmniejszamy ikonki dla lepszego dopasowania */
+                font-size: 32px;
             }
             .link-btn {
                 padding: 16px 20px;
@@ -167,12 +162,11 @@
             <a href="https://www.instagram.com/kubururu/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://github.com/kubururu" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.youtube.com/@kuburu" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <!-- Usunięty nadmiarowy cudzysłów po podmiance linku Discorda -->
             <a href="discord://-/users/295252007948779530"><i class="fa-brands fa-discord"></i></a>
         </div>
 
-        <a href="/deadlock-mixy" class="link-btn">
-            <span class="link-text">Deadlock Mixy</span>
+        <a href="/deadlock-draft" class="link-btn">
+            <span class="link-text">Deadlock Draft</span>
         </a>
 
         <div class="embed-container" style="aspect-ratio: 16/9;">
